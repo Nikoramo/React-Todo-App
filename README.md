@@ -1,5 +1,5 @@
 # React Todo App
-    - [DEMO LINK](https://Nikoramo.github.io/React-Todo-App/)
+  - [DEMO LINK](https://Nikoramo.github.io/React-Todo-App/)
     - [Example](src/images/edittodo.gif)
 
   Web-based to-do list application developed using the React framework.

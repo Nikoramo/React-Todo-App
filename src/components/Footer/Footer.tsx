@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Todo } from '../../types/Todo';
 import { PageNavLink } from '../PageNavLink';
 
@@ -11,8 +11,8 @@ export const Footer:React.FC<Props> = ({
   todos,
   clearCompleted,
 }) => {
-  const todosLeft = todos.filter(todoLeft => !todoLeft.completed).length;
-  const isVisibleButton = todos.some(todo => todo.completed);
+  const todosLeft = useMemo(() => todos.filter(todoLeft => !todoLeft.completed).length, [todos]);
+  const isVisibleButton = useMemo(() => todos.some(todo => todo.completed), [todos]);
 
   return (
     <footer className="footer">

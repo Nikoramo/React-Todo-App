@@ -1,5 +1,5 @@
 import { Todo } from './types/Todo';
-import { Filter } from './types/Filter';
+import { Filter } from './enums/Filter';
 
 export function getFilteredTodos(todos: Todo[], filter: string) {
   const returnArr = [...todos];
